@@ -1,0 +1,23 @@
+<h2> Filmes </h2>
+
+<ul>
+  <li *ngFor="let movie of movies; let i = index" (click)="selectMovie(movie);">
+    Nome:{{movie.name}} | Nota: {{movie.rating}}
+    <button (click)="selectMovie;"> Editar</button>
+    <button (click)="removeMovie(i);"> Apagar</button>
+  </li>
+</ul>
+
+
+<div *ngIf="selMovie">
+
+  <input type="text" [(ngModel)]="selMovie.name" placeholder="Nome do Filme">
+  <br>
+  <input type="number" [(ngModel)]="selMovie.rating" placeholder=" Nota do Filme">
+
+  <button (click)="addMovie();"> Salvar</button>
+</div>
+
+
+<button (click)="newMovie();"> Novo Filme</button>
+

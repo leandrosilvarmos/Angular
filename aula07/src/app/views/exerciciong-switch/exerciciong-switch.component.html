@@ -1,0 +1,32 @@
+<h2> Exericio ngSwtich</h2>
+
+<input type="text" name="" id="" placeholder="Pesquisa canal Youtube">
+
+<ul>
+  <li> Coisa de nerd</li>
+  <li> Cade a chave </li>
+  <li> Nunca vi uma cientista </li>
+</ul>
+
+
+<div [ngSwitch]>
+
+   <div [ngSwitchCase]="'nunca'">
+    <h3> Nunca vi uma cientista</h3>
+    <a href="#"> Link</a>
+
+   </div>
+
+   <div [ngSwitchCase]="'coisa'">
+    <h3> Coisa de nerd</h3>
+    <a href="#"> Link</a>
+
+
+   </div>
+
+   <div [ngSwitchCase]="'cade'">
+    <h3> Cade a chave</h3>
+    <a href="#"> Link</a>
+
+
+</div>
