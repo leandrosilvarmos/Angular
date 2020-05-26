@@ -1,0 +1,13 @@
+<h2>Verificar TimeZone</h2>
+
+
+<input type="text" placeholder="Informe o TimeZone" [(ngModel)]="inputZone">
+<button (click)="consultartimeZone()">Consultar</button>
+
+
+<div *ngIf="horario">
+
+<p>{{horario.datetime}}</p>
+<p>{{horario.timezone}}</p>
+
+</div>
